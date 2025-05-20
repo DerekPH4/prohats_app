@@ -69,6 +69,7 @@ def index():
     return render_template("index.html", resultado=conteo_html)  # Pasamos conteo_html a la plantilla
 
 if __name__ == "__main__":
-    print("🚀 Iniciando aplicación Flask...")
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    print(f"🚀 Iniciando aplicación Flask en el puerto {port}...")
+    app.run(host="0.0.0.0", port=port)
     
