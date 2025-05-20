@@ -1,0 +1,174 @@
+/* General */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1A1A1A;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  background-color: #000;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Saludo */
+.greeting {
+  margin-bottom: 20px;
+}
+
+.speech-bubble {
+  background-color: #9e1c23;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Formulario */
+.form-group {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+input[type="file"], select {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  border: 1px solid #444;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input[type="file"]:focus, select:focus {
+  border-color: #9e1c23;
+}
+
+/* Botón Procesar */
+.process-btn {
+  background-color: #9e1c23;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.process-btn:hover {
+  background-color: #b72f38;
+}
+
+/* Barra de navegación */
+/* Barra de navegación */
+.footer-nav {
+  display: flex;
+  justify-content: center; /* Centra el contenido */
+  margin-top: 20px; /* Espacio encima */
+}
+
+.nav-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.nav-btn:hover {
+  background-color: #9e1c23;
+}
+
+/* Modal */
+.modal {
+  display: none; /* Initially hidden */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: auto;
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #222;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  color: white;
+}
+
+.close {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #9e1c23;
+}
+
+/* Tabla de resultados */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #9e1c23;
+  color: white;
+}
+/* Estilos del pie de página */
+footer {
+  text-align: center; /* Centra el texto */
+  margin-top: 30px; /* Espacio superior */
+  font-size: 14px; /* Tamaño de la fuente */
+  color: #fff; /* Color del texto */
+  background-color: #333; /* Fondo oscuro */
+  padding: 10px 0; /* Espaciado */
+}
+
+footer p {
+  margin: 0; /* Elimina el margen */
+}
+
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROHATS</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <div class="greeting">
+      <div class="speech-bubble">¡Bienvenido a PROHATS!</div>
+    </div>
+
+    <!-- Formulario de carga de PDF y selección de opción -->
+    <form method="POST" enctype="multipart/form-data" id="pdf-form">
+      <div class="form-group">
+        <label for="pdf-upload">Subir PDF</label>
+        <input type="file" name="pdf" id="pdf-upload" accept=".pdf" required>
+      </div>
+
+      <div class="form-group">
+        <label for="opcion">Contar por</label>
+        <select name="opcion" id="opcion" required>
+          <option value="ph">PH</option>
+          <option value="cliente">Cliente</option>
+        </select>
+      </div>
+
+      <button type="submit" class="process-btn">PROCESAR</button>
+    </form>
+
+    <!-- Sección para mostrar el resultado -->
+    {% if resultado %}
+      <hr>
+      <h3>Resultado del análisis:</h3>
+      <div>{{ resultado|safe }}</div>  <!-- Aquí se muestra la tabla con el conteo -->
+    {% endif %}
+
+    <!-- Barra de navegación -->
+    <div class="footer-nav">
+      <!-- Redirige al formulario de carga -->
+      <a href="/" class="nav-btn">Inicio</a> 
+    </div>
+  </div>
+
+  <footer>
+  <p> © Ing. Derek Franco 2025</p>
+</footer>
+
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
